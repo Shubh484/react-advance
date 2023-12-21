@@ -26,7 +26,14 @@ const UseStateArray = () => {
             <h4>{name}</h4>
             <button type="button" onClick={() => removeItem(id)}>
               remove
-            </button>
+            </button>{" "}
+            {/*   <button type="button" onClick={() => removeItem(id)}>:
+
+This approach creates an arrow function inline within the onClick attribute. It means that each time this button is clicked, a new function instance is created.
+It's useful if you need to pass additional arguments or perform some extra logic before calling the removeItem function.
+<button type="button" onClick={removeItem(id)}>:
+
+This syntax directly calls the removeItem function when the component renders. It executes immediately and assigns whatever removeItem(id) returns to onClick.  */}
           </div>
         );
       })}
