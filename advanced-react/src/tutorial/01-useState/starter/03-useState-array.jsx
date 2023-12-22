@@ -10,10 +10,6 @@ const UseStateArray = () => {
     setPeople(newPeople);
   };
 
-  const ClearAllItems = () => {
-    setPeople([]);
-  };
-
   return (
     <>
       {people.map((person) => {
@@ -41,7 +37,7 @@ This syntax directly calls the removeItem function when the component renders. I
         type="button"
         className="btn"
         style={{ marginTop: "2rem" }}
-        onClick={ClearAllItems}
+        onClick={() => setPeople([])}
       >
         clear all
       </button>
