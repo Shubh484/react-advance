@@ -1,17 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from "react";
 
 const UseEffectBasics = () => {
   const [value, setValue] = useState(0);
   const sayHello = () => {
-    console.log('hello there');
+    console.log("hello there");
   };
 
   sayHello();
 
+  useEffect(() => {
+    console.log("hello from useEffect"); // will not invoke in re-render
+  }, []);
+
   return (
     <div>
       <h1>value : {value}</h1>
-      <button className='btn' onClick={() => setValue(value + 1)}>
+      <button className="btn" onClick={() => setValue(value + 1)}>
         click me
       </button>
     </div>
