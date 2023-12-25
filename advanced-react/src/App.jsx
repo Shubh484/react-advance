@@ -1,9 +1,9 @@
-import FetchData from "./tutorial/02-useEffect/starter/04-fetch-data";
+import MultipleReturnsBasics from "./tutorial/03-conditional-rendering/starter/01-multiple-returns-basics";
 
 function App() {
   return (
     <>
-      <FetchData />
+      <MultipleReturnsBasics />
     </>
   );
 }
