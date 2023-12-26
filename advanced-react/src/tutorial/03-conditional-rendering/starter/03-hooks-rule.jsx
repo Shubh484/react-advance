@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const Example = () => {
   const [condition, setCondition] = useState(true);
   if (condition) {
-    // won't work
+    // won't work // cannot use hooks inside conditionally
     const [state, setState] = useState(false);
   }
 
