@@ -1,9 +1,9 @@
-import MultipleReturnsFetchData from "./tutorial/03-conditional-rendering/starter/02-multiple-returns-fetch-data";
+import ShortCircuitOverview from "./tutorial/03-conditional-rendering/starter/04-short-circuit-overview";
 
 function App() {
   return (
     <>
-      <MultipleReturnsFetchData />
+      <ShortCircuitOverview />
     </>
   );
 }
