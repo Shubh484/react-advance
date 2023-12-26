@@ -1,9 +1,9 @@
-import ShortCircuitOverview from "./tutorial/03-conditional-rendering/starter/04-short-circuit-overview";
+import ShortCircuitExamples from "./tutorial/03-conditional-rendering/starter/05-short-circuit-examples";
 
 function App() {
   return (
     <>
-      <ShortCircuitOverview />
+      <ShortCircuitExamples />
     </>
   );
 }
