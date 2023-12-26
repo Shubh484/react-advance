@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-const url = "https://api.github.com/users/QuincyLarson ";
+const url = "https://api.github.com/users/QuincyLarson";
 
 const MultipleReturnsFetchData = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,11 +15,20 @@ const MultipleReturnsFetchData = () => {
         console.log(user);
         setUser(user);
       } catch (error) {
+        setIsError(true);
         console.log(error);
       }
+      setIsLoading(false);
     };
     fetchUser();
   }, []);
+
+  if (isLoading) {
+    return <h2>Loading....</h2>;
+  }
+  if (isError) {
+    return <h2>There was an error...</h2>;
+  }
 
   const { avatar_url, name, company, bio } = user;
   return (
