@@ -1,9 +1,9 @@
-import ToggleChallenge from "./tutorial/03-conditional-rendering/starter/06-toggle-challenge";
+import UserChallenge from "./tutorial/03-conditional-rendering/starter/07-user-challenge";
 
 function App() {
   return (
     <>
-      <ToggleChallenge />
+      <UserChallenge />
     </>
   );
 }
