@@ -1,9 +1,9 @@
-import ShortCircuitExamples from "./tutorial/03-conditional-rendering/starter/05-short-circuit-examples";
+import ToggleChallenge from "./tutorial/03-conditional-rendering/starter/06-toggle-challenge";
 
 function App() {
   return (
     <>
-      <ShortCircuitExamples />
+      <ToggleChallenge />
     </>
   );
 }
