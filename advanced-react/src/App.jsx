@@ -1,9 +1,9 @@
-import UserChallenge from "./tutorial/03-conditional-rendering/starter/07-user-challenge";
+import CleanupFunction from "./tutorial/02-useEffect/starter/05-cleanup-function";
 
 function App() {
   return (
     <>
-      <UserChallenge />
+      <CleanupFunction />
     </>
   );
 }
