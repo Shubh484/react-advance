@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const CleanupFunction = () => {
   const [toggle, setToggle] = useState(false);
+  console.log("render");
 
   return (
     <>
@@ -18,7 +19,14 @@ const CleanupFunction = () => {
 
 const RandomComponent = () => {
   useEffect(() => {
-    console.log("hmm, this is interesting"); // this will load whenever you toggle, because we are displaying the component conditionally
+    // console.log("hmm, this is interesting");
+    const intId = setInterval(() => {
+      // console.log("hello from interval");
+    }, 1000);
+    return () => {
+      clearInterval(intId);
+      console.log("clean up");
+    };
   }, []);
   return <h2>hello world</h2>;
 };
